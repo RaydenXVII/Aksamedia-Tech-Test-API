@@ -128,7 +128,7 @@ class EmployeeController extends Controller
                 'message' => 'Data pegawai tidak ditemukan'
             ], 404);
         }
-        //
+
         if ($employee->image && Storage::disk('public')->exists($employee->image)) {
             Storage::disk('public')->delete($employee->image);
         }
